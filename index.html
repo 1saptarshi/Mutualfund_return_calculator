@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIP Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-semibold mb-4 text-center"> MITUAL FUND RETURN CALCULATOR</h1>
+    <div class="bg-blue-200 p-6 rounded-lg shadow-md">
+      <label class="block mb-2">
+        Investment Amount (₹)
+        <div class="flex items-center ">
+            <button id="decreaseInvestmentAmount" class="btn bg-blue-500 text-white px-2 py-1 rounded-l-md focus:outline-none focus:ring focus:ring-blue-200">-</button>
+            <input type="number" id="investmentAmount" class="bg-blue-200 mt-1 block w-full border-blue-300 rounded-none focus:border-blue-500 focus:ring focus:ring-blue-200" placeholder="Enter amount" value="10000">
+            <button id="increaseInvestmentAmount" class="btn bg-blue-500 text-white px-2 py-1 rounded-r-md focus:outline-none focus:ring focus:ring-blue-200">+</button>
+          </div>
+
+           
+      </label>
+      <label class="block mb-2">
+         Duration (Years)
+        <div class="flex items-center">
+            <button id="decreaseSIPDuration" class="btn bg-blue-500 text-white px-2 py-1 rounded-l-md focus:outline-none focus:ring focus:ring-blue-200">-</button>
+            <input type="number" id="sipDuration" class="bg-blue-200 mt-1 block w-full border-gray-300 rounded-none focus:border-blue-500 focus:ring focus:ring-blue-200" placeholder="Enter amount" value="100">
+            <button id="increaseSIPDuration" class="btn bg-blue-500 text-white px-2 py-1 rounded-r-md focus:outline-none focus:ring focus:ring-blue-200">+</button>
+          </div>
+
+
+           
+        
+      </label>
+      <label class="block mb-2">
+        Expected Annual Return (%)
+        <div class="flex items-center">
+            <button id="decreaseAnnualReturn" class="btn bg-blue-500 text-white px-2 py-1 rounded-l-md focus:outline-none focus:ring focus:ring-blue-200">-</button>
+            <input type="number" id="annualReturn" class="bg-blue-200 mt-1 block w-full border-gray-300 rounded-none focus:border-blue-500 focus:ring focus:ring-blue-200" placeholder="Enter amount" value="100">
+            <button id="increaseAnnualReturn" class="btn bg-blue-500 text-white px-2 py-1 rounded-r-md focus:outline-none focus:ring focus:ring-blue-200">+</button>
+          </div>
+
+
+          
+      </label>
+      <div class="container mx-auto p-4">
+        <!-- Other elements -->
+        <div class="flex justify-center">
+          <button id="calculateBtn" class="btn bg-blue-500 text-white px-4 py-2 rounded-md mt-4 hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200">Calculate</button>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="result" class="mt-4 text-center  text-black"></div>
+
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
